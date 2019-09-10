@@ -29,6 +29,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 ![Product Name Screen Shot][screenshot]
+
+
 **Postino** was built to make sending emails via WP the easiest it can get. It provides a setting page where you can set the SMTP parameters, but, in case of batch installations, you can even put a configuration file in your theme. 
 ### How it works
 Postino overrides the WordPress' core function `wp_mail()`, by adding custom options to use with SMTP. The SMTP sending is done via the [PHPMailer extension](https://code.google.com/a/apache-extras.org/p/phpmailer/), which you can substitute with any SMTP library you prefer.
