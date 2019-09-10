@@ -45,7 +45,7 @@ Postino overrides the WordPress' core function `wp_mail()`, by adding custom opt
 You can just clone this repository inside your `wp-content/plugins` folder, or [download the installable zip](https://github.com/simmontali/postino/zipball/master) and install it via the WordPress dashboard. 
 
 ### Updates
-Right now, Postino doesn't update itself via the WordPress updates. That is a WIP and will be implemented in the future.
+Since the release 1.0.1, you can update Postino directly from the WordPress' dashboard, like any other plugin.
 
 
 <!-- USAGE EXAMPLES -->
