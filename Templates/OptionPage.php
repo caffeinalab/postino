@@ -7,7 +7,7 @@ do_settings_sections( 'postino_options' );
 ?><table class="form-table">
 <tr valign="top">
 <th scope="row">SMTP security</th>
-<td><input type="radio" name="smtp_secure" value="none" <?php if (get_option('smtp_secure')=="") echo 'checked'?>> None<br>
+<td><input type="radio" name="smtp_secure" value="none" <?php if (get_option('smtp_secure')=="" || get_option('smtp_secure')=="none") echo 'checked'?>> None<br>
 <input type="radio" name="smtp_secure" value="ssl" <?php if (get_option('smtp_secure')=="ssl") echo 'checked'?>> SSL<br>
 </tr>
 <tr valign="top">

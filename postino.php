@@ -21,7 +21,7 @@ if (!function_exists('wp_mail')) {
             $body = preg_replace('/\\\\/','', $body);   // Strip backslashes
             $mail->IsSMTP();                                        
             $mail->SMTPAuth = true;                               
-            $mail->SMTPSecure = (get_option('smtp_secure')=="") ? null : get_option('smtp_secure'); 
+            $mail->SMTPSecure = (get_option('smtp_secure')=="none" || get_option('smtp_secure')=="") ? null : get_option('smtp_secure'); 
             $mail->Port = (get_option('smtp_port')==false) ? 25 : get_option('smtp_port');            
             $mail->Host = get_option('smtp_server');          
             $mail->Username = get_option('smtp_user');            
