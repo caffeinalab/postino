@@ -115,10 +115,26 @@ function render_admin_notice($type, $message)
     );
 }
 
+function setting_button_adder($links)
+{
+    array_splice(
+        $links, 
+        0, 
+        0, 
+        '<a href="' .admin_url('options-general.php?page=postino') .
+            '">' . __('Settings') . '</a>'
+    );
+    return $links;
+}
+
 // Boot of Postino
 if (is_admin()) {
     add_action('admin_menu', 'register_menu_entry');
     add_action('admin_init', 'register_settings');
     add_action('admin_init', 'check_if_options_exist');
+    add_filter(
+        'plugin_action_links_'.plugin_basename(__FILE__),
+        'setting_button_adder'
+    );
     (new Updater())->bootUpdateService();
 }
