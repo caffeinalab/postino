@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/simmontali/postino">
-    <img src="README_res/postman.png" alt="Logo" width="130" height="130">
+    <img src="res/postman.png" alt="Logo" width="130" height="130">
   </a>
   <h1 align="center">POSTINO</h1>
 
@@ -96,5 +96,5 @@ Distributed under the GPL License. See `LICENSE` for more information.
 
 Project Link: [https://github.com/simmontali/postino](https://github.com/simmontali/postino)
 
-[screenshot]: README_res/screenshot.gif "Screenshot"
-[logo]: README_res/postman.png
+[screenshot]: res/screenshot.gif "Screenshot"
+[logo]: res/postman.png

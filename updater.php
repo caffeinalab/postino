@@ -100,6 +100,7 @@ class Updater
             $obj->url = $this->pluginData["PluginURI"];
             $obj->package = $package;
             $obj->plugin = $this->config["slug"];
+            $obj->icons = ['1x' => '/wp-content/plugins/postino/res/128.png', '2x' => '/wp-content/plugins/postino/res/128.png'];
             $transient->response[$this->config["slug"]] = $obj;
         }
         return $transient;
