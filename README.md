@@ -1,7 +1,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-
+  <a href="https://github.com/simmontali/postino">
+    <img src="README_res/postman.png" alt="Logo" width="130" height="130">
+  </a>
   <h1 align="center">POSTINO</h1>
 
   <p align="center">
@@ -84,7 +86,7 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the GPL License. See `LICENSE` for more information.
-
+<div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
 
 
 <!-- CONTACT -->
@@ -95,3 +97,4 @@ Distributed under the GPL License. See `LICENSE` for more information.
 Project Link: [https://github.com/simmontali/postino](https://github.com/simmontali/postino)
 
 [screenshot]: README_res/screenshot.gif "Screenshot"
+[logo]: README_res/postman.png
