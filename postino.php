@@ -2,13 +2,19 @@
 /**
  * Plugin Name: Postino
  * Description: A new breath of life to wp_mail.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Simone Montali @ Caffeina
  * Author URI:  https://caffeina.com/
+ * Plugin URI:  https://github.com/simmontali/postino
  */
+//namespace Postino;
+
+require 'PHPMailer/class.phpmailer.php';
+require 'updater.php';
+
+use Postino\Updater;
 
 defined('ABSPATH') or die('No script kiddies please!');
-require 'PHPMailer/class.phpmailer.php';
 
 
 if (!function_exists('wp_mail')) {
@@ -114,4 +120,5 @@ if (is_admin()) {
     add_action('admin_menu', 'register_menu_entry');
     add_action('admin_init', 'register_settings');
     add_action('admin_init', 'check_if_options_exist');
+    (new Updater())->bootUpdateService();
 }
