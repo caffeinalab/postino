@@ -8,7 +8,7 @@
  * Plugin URI:  https://github.com/simmontali/postino
  */
 
-include_once(ABSPATH . WPINC . '/class-phpmailer.php'); 
+require_once ABSPATH . WPINC . '/class-phpmailer.php'; 
 
 require 'updater.php';
 
