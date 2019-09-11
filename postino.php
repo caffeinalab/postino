@@ -8,12 +8,8 @@
  * Plugin URI:  https://github.com/simmontali/postino
  */
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+include_once(ABSPATH . WPINC . '/class-phpmailer.php'); 
 
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
 require 'updater.php';
 
 use Postino\Updater;
