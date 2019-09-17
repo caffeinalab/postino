@@ -194,8 +194,12 @@ if (!function_exists('wp_mail')) {
                     $mail->addCustomHeader(sprintf("Content-Type: %s;\n\t boundary=\"%s\"", $content_type, $boundary));
                 }
             }
-            $mail->AddAddress($to);
-        
+            if (is_array($to)) {
+                foreach ($to as $to_addr)
+                    $mail->AddAddress($to_addr);
+            } else {
+                $mail->AddAddress($to);
+            }        
             $mail->Subject  = $subject;
             
             $mail->MsgHTML($body);
