@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/simmontali/postino">
+  <a href="https://github.com/caffeinalab/postino">
     <img src="res/postman.png" alt="Logo" width="130" height="130">
   </a>
   <h1 align="center">POSTINO</h1>
@@ -42,7 +42,7 @@ Postino overrides the WordPress' core function `wp_mail()`, by adding custom opt
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You can just clone this repository inside your `wp-content/plugins` folder, or [download the installable zip](https://github.com/simmontali/postino/zipball/master) and install it via the WordPress dashboard. 
+You can just clone this repository inside your `wp-content/plugins` folder, or [download the installable zip](https://github.com/caffeinalab/postino/releases/latest/download/postino.zip) and install it via the WordPress dashboard. 
 
 ### Updates
 Since the release 1.0.1, you can update Postino directly from the WordPress' dashboard, like any other plugin.
@@ -94,7 +94,7 @@ Distributed under the GPL License. See `LICENSE` for more information.
 
 [Simone Montali](https://monta.li) - [@Caffeina](https://caffeina.com)
 
-Project Link: [https://github.com/simmontali/postino](https://github.com/simmontali/postino)
+Project Link: [https://github.com/caffeinalab/postino](https://github.com/simmontali/postino)
 
 [screenshot]: res/screenshot.gif "Screenshot"
 [logo]: res/postman.png
