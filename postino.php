@@ -124,7 +124,7 @@ if (!function_exists('wp_mail')) {
                     $string_attachments = explode(",", str_replace("\r\n", "\n", $string_attachments));
                 }
                 foreach ($string_attachments as $attachment) {
-                    $mail->AddStringAttachment($attachment);
+                    $mail->AddStringAttachment(file_get_contents($attachment), end(parse_url($attachment)));
                 }
             }
             $address_headers = compact('to', 'cc', 'bcc', 'reply_to');
