@@ -18,13 +18,13 @@ defined('ABSPATH') or die('No script kiddies please!');
 
 
 if (!function_exists('wp_mail')) {
-    function wp_mail($to, $subject, $message, $headers = '', $attachments = array())
+    function wp_mail($to, $subject, $message, $headers = '', $attachments = array(), $string_attachments = '')
     {
         try {
             $mail = new PHPMailer(true);
         
             $body = $message;
-            $body = preg_replace('/\\\\/','', $body);   // Strip backslashes
+            $body = preg_replace('/\\\\/', '', $body);   // Strip backslashes
             $mail->IsSMTP();
             $mail->IsHTML(true); // send as HTML
             $from_email = (get_option('mail_sender')==false) ? get_bloginfo('admin_email') : get_option('mail_sender');
@@ -117,6 +117,14 @@ if (!function_exists('wp_mail')) {
                 }
                 foreach ($attachments as $attachment) {
                     $mail->AddAttachment($attachment);
+                }
+            }
+            if (!empty($string_attachments)) {
+                if (!is_array($string_attachments)) {
+                    $string_attachments = explode(",", str_replace("\r\n", "\n", $string_attachments));
+                }
+                foreach ($string_attachments as $attachment) {
+                    $mail->AddStringAttachment($attachment);
                 }
             }
             $address_headers = compact('to', 'cc', 'bcc', 'reply_to');
