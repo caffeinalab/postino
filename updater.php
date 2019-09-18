@@ -15,7 +15,7 @@ class Updater
             'proper_folder_name' => 'postino'
         ];
         $this->github = [
-            'user' => 'simmontali',
+            'user' => 'caffeinalab',
             'repository' => 'postino'
         ];
     }
