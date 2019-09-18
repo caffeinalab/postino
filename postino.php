@@ -5,7 +5,7 @@
  * Version:     1.0.2
  * Author:      Simone Montali @ Caffeina
  * Author URI:  https://caffeina.com/
- * Plugin URI:  https://github.com/simmontali/postino
+ * Plugin URI:  https://github.com/caffeinalab/postino
  */
 
 require_once ABSPATH . WPINC . '/class-phpmailer.php'; 
