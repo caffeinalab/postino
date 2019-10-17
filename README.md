@@ -95,7 +95,7 @@ Copyright 2014-2019 [Caffeina](http://caffeina.com) SpA under the [MIT license](
 
 [Simone Montali](https://monta.li) started the project during his time [@Caffeina](https://caffeina.com)
 
-Project Link: [https://github.com/caffeinalab/postino](https://github.com/simmontali/postino)
+Project Link: [https://github.com/caffeinalab/postino](https://github.com/caffeinalab/postino)
 
 [screenshot]: res/screenshot.gif "Screenshot"
 [logo]: res/postman.png
