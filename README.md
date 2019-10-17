@@ -24,6 +24,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Copyright and license](#copyright-and-license)
 - [Contributions](#contributions)
 
 
@@ -81,9 +82,13 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the GPL License. See `LICENSE` for more information.
-<div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+## Copyright and license
 
+Copyright 2014-2019 [Caffeina](http://caffeina.com) SpA under the [MIT license](LICENSE.md).
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcaffeina-core%2Fcore.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcaffeina-core%2Fcore?ref=badge_large)
+
+<div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 <!-- CONTRIBUTIONS -->
 ## Contributions
