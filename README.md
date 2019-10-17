@@ -24,7 +24,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+- [Contributions](#contributions)
 
 
 
@@ -51,23 +51,21 @@ Since the release 1.0.1, you can update Postino directly from the WordPress' das
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To use Postino, just install it and set up your SMTP server in the settings page. Don't want to do that? Just include a `postino.json` file in your active theme folder. Postino will look for it and load the settings in it. A `postino.json` file defines these settings:
+To use Postino, just install it and set up your SMTP server in the settings page.
 
-```json
-{
-    "smtp_secure": "ssl",
-    "smtp_port": 465,
-    "smtp_server": "smtp.gmail.com",
-    "smtp_user": "sim.montali@gmail.com",
-    "smtp_password": "realpassword!",
-    "mail_sender": "sim.montali@gmail.com",
-    "mail_sender_name": "Simone M."
-}
+You can also alternatively add these settings into `wp-config.php`
+
+```php
+define('POSTINO_CAFF_SMTP_SECURE', 'ssl');
+define('POSTINO_CAFF_SMTP_PORT', 465);
+define('POSTINO_CAFF_SMTP_SERVER', 'smtp.gmail.com');
+define('POSTINO_CAFF_SMTP_USER', 'caffeinadev@gmail.com');
+define('POSTINO_CAFF_SMTP_PASSWORD', 'realpassword!');
+define('POSTINO_CAFF_MAIL_SENDER', 'caffeinadev@gmail.com');
+define('POSTINO_CAFF_MAIL_SENDER_NAME', 'Caffeina labs');
 ```
 
 Everything is now set up. You don't need to worry about anything else.
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -80,8 +78,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
@@ -89,10 +85,10 @@ Distributed under the GPL License. See `LICENSE` for more information.
 <div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
 
 
-<!-- CONTACT -->
-## Contact
+<!-- CONTRIBUTIONS -->
+## Contributions
 
-[Simone Montali](https://monta.li) - [@Caffeina](https://caffeina.com)
+[Simone Montali](https://monta.li) started the project during his time [@Caffeina](https://caffeina.com)
 
 Project Link: [https://github.com/caffeinalab/postino](https://github.com/simmontali/postino)
 
