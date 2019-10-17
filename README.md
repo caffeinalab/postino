@@ -11,8 +11,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -26,8 +24,6 @@
 - [License](#license)
 - [Copyright and license](#copyright-and-license)
 - [Contributions](#contributions)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -46,8 +42,8 @@ The plugin simply uses the WordPress hook `phpmailer_ini` to set the SMTP config
 You can just clone this repository inside your `wp-content/plugins` folder, or [download the installable zip](https://github.com/caffeinalab/postino/releases/latest/download/postino.zip) and install it via the WordPress dashboard. 
 
 ### Updates
-Since the release 1.0.1, you can update Postino directly from the WordPress' dashboard, like any other plugin.
 
+Since the release 1.0.1, you can update Postino directly from the WordPress' dashboard, like any other plugin.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
