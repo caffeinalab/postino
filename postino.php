@@ -85,18 +85,23 @@ function render_option_page()
 function check_if_options_exist()
 {
     $loaded = false;
-    $filename = get_template_directory().'/postino.json';
-    if (!file_exists($filename)) {
-        return;
-    }
-    $config = json_decode(file_get_contents($filename), true);
-    $options = ['smtp_secure', 'smtp_port', 'smtp_server', 'smtp_user', 'smtp_password', 'mail_sender', 'mail_sender_name'];
+    $options = [
+      'smtp_secure', 
+      'smtp_port', 
+      'smtp_server', 
+      'smtp_user', 
+      'smtp_password', 
+      'mail_sender', 
+      'mail_sender_name'
+    ];
+
     foreach ($options as $option) {
-        if (get_option($option)==false && isset($config[$option])) {
-            update_option($option, $config[$option]);
+        if (false == get_option($option) && defined(strtoupper('POSTINO_CAFF_'.$option))) {
+            update_option($option, constant('POSTINO_CAFF_'.strtoupper($option)));
             $loaded = true;
         }
     }
+
     if ($loaded) {
         render_admin_notice('notice-info', 'I have loaded the config from postino.json. You can now delete it.');
     }
