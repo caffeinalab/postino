@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Postino
  * Description: A new breath of life to wp_mail.
- * Version:     2.0.0
+ * Version:     2.0.1
  * Author:      Caffeina
  * Author URI:  https://caffeina.com/
  * Plugin URI:  https://github.com/caffeinalab/postino
