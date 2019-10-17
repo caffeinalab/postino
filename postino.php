@@ -8,9 +8,7 @@
  * Plugin URI:  https://github.com/caffeinalab/postino
  */
 
-require_once ABSPATH . WPINC . '/class-phpmailer.php'; 
-
-require 'updater.php';
+ require 'updater.php';
 
 use Postino\Updater;
 
