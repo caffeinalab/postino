@@ -86,7 +86,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Copyright 2014-2019 [Caffeina](http://caffeina.com) SpA under the [MIT license](LICENSE.md).
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcaffeina-core%2Fcore.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcaffeina-core%2Fcore?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcaffeinalab%2Fpostino.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcaffeinalab%2Fpostino?ref=badge_small)
 
 <div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
