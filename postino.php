@@ -14,13 +14,13 @@ use Postino\Updater;
 
 defined('ABSPATH') or die('No script kiddies please!');
 
-function setup_mailer()
+function post_caff_setup_mailer()
 {
-    add_filter('wp_mail', 'postino_set_from');
-    add_action('phpmailer_init', 'postino_send_smtp_email', 10, 1);
+    add_filter('wp_mail', 'post_caff_set_from');
+    add_action('phpmailer_init', 'post_caff_send_smtp_email', 10, 1);
 }
 
-function postino_set_from($mail) 
+function post_caff_set_from($mail) 
 {
     add_filter('wp_mail_from', function($from) { 
         return (get_option('mail_sender')==false) 
@@ -34,7 +34,7 @@ function postino_set_from($mail)
     });
 }
 
-function postino_send_smtp_email($mail)
+function post_caff_send_smtp_email($mail)
 {
     if ( ! is_object( $mail ) ) {
             $mail = (object) $phpmailer;
@@ -53,7 +53,7 @@ function postino_send_smtp_email($mail)
                           : get_option('smtp_secure');
 }
 
-function register_settings()
+function post_caff_register_settings()
 {
     register_setting('postino_options', 'smtp_secure', ['type' => 'string']);
     register_setting('postino_options', 'smtp_port', ['type' => 'number']);
@@ -64,7 +64,7 @@ function register_settings()
     register_setting('postino_options', 'mail_sender_name', ['type' => 'string']);
 }
 
-function register_menu_entry()
+function post_caff_register_menu_entry()
 {
     add_options_page(
         'Postino settings',
@@ -75,12 +75,12 @@ function register_menu_entry()
     );
 }
 
-function render_option_page()
+function post_caff_render_option_page()
 {
     include 'Templates/OptionPage.php';
 }
 
-function check_if_options_exist()
+function post_caff_check_if_options_exist()
 {
     $loaded = false;
     $options = [
@@ -101,11 +101,11 @@ function check_if_options_exist()
     }
 
     if ($loaded) {
-        render_admin_notice('notice-info', 'I have loaded the config from postino.json. You can now delete it.');
+        post_caff_render_admin_notice('notice-info', 'I have loaded the config from postino.json. You can now delete it.');
     }
 }
 
-function render_admin_notice($type, $message) 
+function post_caff_render_admin_notice($type, $message) 
 {
     add_action(
         'admin_notices', 
@@ -115,7 +115,7 @@ function render_admin_notice($type, $message)
     );
 }
 
-function setting_button_adder($links)
+function post_caff_setting_button_adder($links)
 {
     array_splice(
         $links, 
@@ -127,16 +127,16 @@ function setting_button_adder($links)
     return $links;
 }
 
-setup_mailer();
+post_caff_setup_mailer();
 
 // Boot of Postino
 if (is_admin()) {
-    add_action('admin_menu', 'register_menu_entry');
-    add_action('admin_init', 'register_settings');
-    add_action('admin_init', 'check_if_options_exist');
+    add_action('admin_menu', 'post_caff_register_menu_entry');
+    add_action('admin_init', 'post_caff_register_settings');
+    add_action('admin_init', 'post_caff_check_if_options_exist');
     add_filter(
         'plugin_action_links_'.plugin_basename(__FILE__),
-        'setting_button_adder'
+        'post_caff_setting_button_adder'
     );
     (new Updater())->bootUpdateService();
 }
