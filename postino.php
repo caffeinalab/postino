@@ -71,7 +71,7 @@ function post_caff_register_menu_entry()
         'Postino',
         'manage_options',
         'postino',
-        'render_option_page'
+        'post_caff_render_option_page'
     );
 }
 
